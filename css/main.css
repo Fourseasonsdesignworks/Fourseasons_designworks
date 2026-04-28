@@ -89,10 +89,12 @@ header {
 }
 
 .concept_img {
-    margin-right: calc(50% - 50vw);
-
+    text-align: right;
 }
 
+.concept_img img {
+    display: inline;
+}
 
 /* about */
 .about {
@@ -114,10 +116,14 @@ header {
     letter-spacing: 5%;
 }
 
+.about_things div {
+    display: flex;
+}
+
 .about_things dt {
-    text-align: center;
+    text-align: left;
     border: 2px solid #5F4343;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px 15px;
     background-color: #F3F1F2;
 }
@@ -248,7 +254,7 @@ header {
     opacity: 1;
 }
 
-/* <about.html> */
+/* <about/index.html> */
 .about_main {
     margin-top: 325px;
     display: flex;
@@ -280,8 +286,8 @@ header {
 }
 
 .about_left2 {
-    width: 50%;
-    margin-left: 60px;
+    width: 75%;
+    padding: 35px;
 }
 
 .about_text {
@@ -292,9 +298,11 @@ header {
     font-size: 16px;
 }
 
-/* .about_right {
-    margin-top: 140px;
-} */
+.about_text,
+.about_text2,
+.about_list {
+    margin-top: 30px;
+}
 
 
 
@@ -330,4 +338,14 @@ header {
     width: 100%;
     height: auto;
     display: block;
+}
+
+
+/* contact */
+.contact_main {
+    background-color: #FEFEF5;
+}
+
+.contact_container {
+    width: 100%;
 }
