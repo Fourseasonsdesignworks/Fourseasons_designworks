@@ -55,13 +55,13 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
 h4 {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   border: 1.5px solid #5F4343;
   border-radius: 5%;
@@ -70,7 +70,7 @@ h4 {
 }
 
 p {
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 2;
   letter-spacing: 0.07em;
 }
@@ -85,7 +85,7 @@ dl,
 dd,
 dt {
   display: inline;
-  font-size: 17px;
+  font-size: 1.0625rem;
   text-align: left;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -105,6 +105,6 @@ dt {
 }
 
 .base_container {
-  max-width: 1040px;
+  max-width: 72%;
   margin: 0 auto;
 }

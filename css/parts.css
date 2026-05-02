@@ -2,7 +2,7 @@
 
 /* スクロールダウン1 scroll */
 .scrolldown1 p {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /*スクロールダウン全体の場所*/
@@ -70,7 +70,11 @@
 
 /* スクロールダウン2 page top*/
 .scrolldown_page a {
-    font-size: 12px;
+    font-size: 0.75;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -87,18 +91,24 @@
     /*全体の高さ*/
     height: 50px;
     z-index: 100;
+    margin-bottom: 50px;
+    width: 130px;
+    transform: translateX(-50%);
 }
 
 /*Scrollテキストの描写*/
 .scrolldown_page span {
     /*描画位置*/
     position: absolute;
-    left: -15px;
-    top: -15px;
+    left: 50%;
     /*テキストの形状*/
     color: #CB504E;
     font-size: 1rem;
     letter-spacing: 0.05em;
+
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: -50px;
 
     /* position: fixed; */
 }
@@ -109,8 +119,9 @@
     /*描画位置*/
     position: absolute;
     top: -20px;
+    left: 50px;
     /*線の形状*/
-    width: 1px;
+    width: 1.5px;
     height: 30px;
     background: #CB504E;
     /*線の動き1.4秒かけて動く。永遠にループ*/
@@ -251,7 +262,7 @@
 /* ボタン */
 .btn_base {
     font-family: "Zen Kaku Gothic New";
-    font-size: 18px;
+    font-size: 1rem;
     padding: 10px 30px 10px 50px;
     color: #ffffff;
     background-color: #C66D6B;
@@ -277,7 +288,7 @@
 .side_nav a {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 1rem;
     writing-mode: vertical-rl;
 }
 
@@ -294,9 +305,13 @@
     z-index: 100;
 }
 
-.side_nav2 li {
-    margin-bottom: 15px;
+.side_nav2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
+
 
 
 
@@ -322,7 +337,7 @@
     text-decoration: none;
     color: #A39489;
     background: transparent;
-    font-size: 24px;
+    font-size: 1.125rem;
     font-family: 'Lucida Sans', sans-serif;
 }
 
@@ -335,10 +350,11 @@
 footer {
     background-color: #A39489;
     height: 80px;
+    margin-top: 100px;
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffffff;
     text-align: center;
     padding: 30px 0;
