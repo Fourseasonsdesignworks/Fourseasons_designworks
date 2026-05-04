@@ -57,6 +57,15 @@ header {
     margin: 0 auto;
 }
 
+.slider,
+.dots {
+    display: none;
+}
+
+.openbtn {
+    display: none;
+}
+
 /* concept */
 .concept {
     margin-block: 200px;
@@ -502,12 +511,6 @@ textarea {
     line-height: 2.5;
 }
 
-/* done.html */
-
-
-
-
-
 /* logo.html */
 .item_container {
     display: flex;
@@ -657,4 +660,77 @@ textarea {
 .web_list td {
     padding: 1em 2em;
     text-align: right;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:1000px) {
+    /* index.html */
+
+    .main-visual,
+    .side_nav,
+    .scrolldown1 {
+        display: none;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slides img {
+        width: 100vw;
+        height: 100vh;
+        transform: rotate(90deg);
+        object-fit: cover;
+        margin-top: 265px;
+    }
+
+    .concept_title {
+        font-size: 2rem;
+        writing-mode: horizontal-tb;
+        line-height: 1.5;
+        height: auto;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .concept_title::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 1px;
+        background-color: #5F4343;
+        position: absolute;
+        top: 20px;
+        left: -60px;
+    }
+
+    .concept_wrapper {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .dots button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        background: #ccc;
+        cursor: pointer;
+    }
+
+    .dots button.active {
+        background: #333;
+    }
 }

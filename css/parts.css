@@ -177,6 +177,28 @@
     transform: translateX(-50%);
 }
 
+@media screen and (max-width:1000px) {
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .title_left p {
+        writing-mode: horizontal-tb;
+        height: auto;
+    }
+
+    .title_left p::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #5F4343;
+        position: absolute;
+        top: 22px;
+        left: 0;
+        transform: translateX(0)
+    }
+}
+
 /* タイトル 右*/
 .title_right {
     display: flex;
@@ -408,4 +430,65 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/*==================================================
+ハンバーガーメニュー
+===================================*/
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn {
+    /*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+    position: relative;
+    background: #57a2c7;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+    /*真ん中の線は透過*/
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
 }
