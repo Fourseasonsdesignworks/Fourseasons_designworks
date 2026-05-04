@@ -51,7 +51,11 @@
                 src="./img/nav_title/about_nav.svg"
                 alt="about"
               /><br />
-              <img src="./img/top_about/spring4.jpg" alt="spring" />
+              <img
+                class="nav_img blur"
+                src="./img/top_about/spring4.jpg"
+                alt="spring"
+              />
             </a>
           </li>
           <li class="mv_nav">
@@ -60,7 +64,11 @@
                 class="nav_top"
                 src="./img/nav_title/skills_nav.svg"
               /><br />
-              <img src="./img/top_about/summer4.jpg" alt="summer" />
+              <img
+                class="nav_img blur"
+                src="./img/top_about/summer4.jpg"
+                alt="summer"
+              />
             </a>
           </li>
           <li class="mv_nav">
@@ -70,7 +78,11 @@
                 src="./img/nav_title/works_nav.svg"
                 alt="works"
               /><br />
-              <img src="./img/top_about/autmun4.jpg" alt="autumn" />
+              <img
+                class="nav_img blur"
+                src="./img/top_about/autmun4.jpg"
+                alt="autumn"
+              />
             </a>
           </li>
           <li class="mv_nav">
@@ -80,20 +92,23 @@
                 src="./img/nav_title/contact_nav.svg"
                 alt="contact"
               /><br />
-              <img src="./img/top_about/winter4.jpg" alt="winter" />
+              <img
+                class="nav_img blur"
+                src="./img/top_about/winter4.jpg"
+                alt="winter"
+              />
             </a>
           </li>
         </ul>
+        <div class="scrolldown1"><span>SCROLL</span></div>
       </nav>
 
-      <div class="scrolldown1"><span>SCROLL</span></div>
-
       <nav class="side_nav base_container">
-        <ul>
-          <li><a href="../about.html">ABOUT</a></li>
-          <li><a href="../index.html#skills">SKILLS</a></li>
-          <li><a href="./index-1.html">WORKS</a></li>
-          <li><a href="../contact/index.html">CONTACT</a></li>
+        <ul class="nav_fixed">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./index.html#skills">SKILLS</a></li>
+          <li><a href="./works/index-1.html">WORKS</a></li>
+          <li><a href="./contact/index.html">CONTACT</a></li>
         </ul>
       </nav>
 
@@ -130,17 +145,17 @@
                 愛知県豊田市在住。高校生・中学生・小学生の１男２女の母であり、
                 「文字の書けるデザイナー」として活動しています。
               </p>
-              <table class="about_things">
+              <table>
                 <dl>
-                  <div>
+                  <div class="about_things">
                     <dt>好きなこと</dt>
                     <dd>山登り(山ごはん)、手仕事(料理・裁縫)、アロマ、漫画</dd>
                   </div>
-                  <div>
+                  <div class="about_things">
                     <dt>苦手なもの</dt>
                     <dd>昆虫、合成香料</dd>
                   </div>
-                  <div>
+                  <div class="about_things">
                     <dt>座右の銘</dt>
                     <dd>"人生楽ありゃ苦もあるさ"</dd>
                   </div>
@@ -188,7 +203,7 @@
             <h2><img src="./img/nav_title/works.png" alt="works" /></h2>
             <p>　　わたしのつくったものたち。</p>
           </div>
-          <a href="./works/index-1.html"
+          <a class="btn_line" href="./works/index-1.html"
             ><button class="btn_base">いったん、いろいろみてみたい。</button></a
           >
         </div>
@@ -216,14 +231,13 @@
             ><img class="door_op" src="./img/btn/door_open.svg" alt="door_op"
           /></a>
         </div>
-
-        <div class="scrolldown_page">
-          <a href="#"><span>PAGE to TOP</span> </a>
-        </div>
       </section>
     </main>
 
     <footer>
+      <div class="scrolldown_page">
+        <a href="#"><span>PAGE to TOP</span> </a>
+      </div>
       <p>©Fourseasons designworks 2026</p>
     </footer>
   </body>

@@ -57,7 +57,9 @@
       <form
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScJO_CnRkrR-1GJif8Y-P0wFCoNgxsevI3ULxzOY8toGixZcA/formResponse"
         method="POST"
-        target="_self"
+        target="hidden_iframe"
+        onsubmit="submitted = true"
+        class="c-form"
       >
         <!-- お名前 -->
         <div class="form-item">
@@ -67,7 +69,7 @@
           <input
             type="text"
             id="name"
-            name="entry.2000472101"
+            name="entry.1070356688"
             required
             placeholder="山田 太郎"
           />
@@ -92,7 +94,7 @@
           <label for="message">お問い合わせ内容</label><br />
           <textarea
             id="message"
-            name="entry.12293928"
+            name="entry.1623583091"
             rows="5"
             placeholder="お問い合わせ内容をご記入ください"
           ></textarea>
@@ -106,7 +108,7 @@
     </div>
 
     <nav class="side_nav base_container">
-      <ul>
+      <ul class="nav_fixed">
         <li><a href="../about.html">ABOUT</a></li>
         <li><a href="../index.html#skills">SKILLS</a></li>
         <li><a href="../works/index-1.html">WORKS</a></li>
@@ -116,6 +118,24 @@
   </main>
 
   <footer>
+    <div class="scrolldown_page">
+      <a href="#"><span>PAGE to TOP</span> </a>
+    </div>
     <p>©Fourseasons designworks 2026</p>
   </footer>
+
+  <!-- iframe -->
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="
+      if (submitted) {
+        window.location = './done.html';
+      }
+    "
+  ></iframe>
 </body>

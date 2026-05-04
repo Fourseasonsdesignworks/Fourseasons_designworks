@@ -25,8 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px 25px 100px;
-
+    padding: 60px 100px 45px 100px;
     background-color: #A39489;
     box-sizing: border-box;
 }
@@ -97,9 +96,9 @@ header {
     text-align: right;
 }
 
-.concept_img img {
+/* .concept_img img {
     display: inline;
-}
+} */
 
 /* about */
 .about {
@@ -114,27 +113,17 @@ header {
     background-color: #F5F9FF;
 }
 
-.about_things {
-    font-size: 1.125rem;
-    text-align: left;
-    line-height: 2;
-    letter-spacing: 5%;
-}
-
-.about_things div {
-    display: flex;
-}
 
 .about_things dt {
-    text-align: left;
+    text-align: center;
     border: 2px solid #5F4343;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px 15px;
     background-color: #F3F1F2;
 }
 
 .about_things dd {
-    margin-inline: 10px;
+    padding: 10px;
 }
 
 .about_left {
@@ -155,6 +144,7 @@ header {
 
 .left_text p {
     margin-bottom: 60px;
+    line-height: 1.5;
 }
 
 
@@ -178,7 +168,7 @@ header {
 
 .skills_text {
     padding-top: 180px;
-    margin-left: calc(50% - 25vw);
+    margin-left: calc(50% - 20vw);
 }
 
 .skills_right {
@@ -267,10 +257,16 @@ header {
 }
 
 /* <about/index.html> */
+.about-body {
+    background-color: #F5F9FF;
+}
+
 .about_main {
     margin-top: 325px;
+    margin-bottom: 250px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .title_about {
@@ -279,23 +275,26 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    transform: translateY(-140px);
 }
 
 .title_about p {
+    position: relative;
     writing-mode: vertical-rl;
     text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.5em;
 }
 
 .title_about p::before {
     content: "";
-    display: block;
     width: 1px;
     height: 40px;
     background-color: #5F4343;
-
     position: absolute;
-    top: 85px;
-    left: 185px;
+    top: 15px;
+    left: 22px;
+    transform: translateX(-50%);
 }
 
 .about_right2 {
@@ -306,25 +305,41 @@ header {
     width: 100%;
 }
 
+.about_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 .about_left2 {
-    width: 75%;
-    padding: 35px;
+    width: 125%;
+    margin: 35px;
 }
 
-.about_text {
-    margin-top: 305px;
+.about_text2 {
+    margin-top: 20px;
 }
 
-.about_left2 p {
-    font-size: 1rem;
-}
-
-.about_text,
-.about_text2,
 .about_list {
-    margin-top: 30px;
+    padding: 15px 0 10px 0;
 }
 
+.about_list dt {
+    width: 40%;
+    border: 2px solid #5F4343;
+    border-radius: 5%;
+    padding: 5px 20px;
+    background-color: #F3F1F2;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
 
 
 /* <works/index-1.html> */
@@ -352,8 +367,9 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    text-align: center;
-    margin: 100px;
+    align-items: center;
+    margin: 80px 0;
+    justify-content: center;
 }
 
 .grid_container img {
@@ -362,6 +378,30 @@ header {
     display: block;
 }
 
+/* works/chichicafe.html */
+.web_inner4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+.grid_container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 250px;
+}
+
+.other_item p {
+    font-size: 0.8em;
+}
+
+.web img {
+    width: 100%;
+}
 
 /* contact */
 /* index.html*/
@@ -418,7 +458,7 @@ header {
 .form-container {
     max-width: 70%;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .contact .form_img {
@@ -471,11 +511,14 @@ textarea {
 /* logo.html */
 .item_container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 50px;
-
+    gap: 35px;
     margin-top: 90px;
+}
+
+.item_wrapper {
+    margin-bottom: 200px;
 }
 
 .item_inner1 img {
@@ -501,11 +544,18 @@ textarea {
 }
 
 .logo_title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: 'Lucida Sans',
+        sans-serif;
+    width: 100%;
 }
 
-.logo_sub-title .logo_text p {
-    font-size: 0.75rem;
+.logo_sub-title,
+.logo_text {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
 }
 
 .logo_date {
@@ -515,25 +565,32 @@ textarea {
 
 /* web/index.html */
 .web_item {
-    max-width: 330px;
+    width: 275px;
+    height: 275px;
     background-color: #F3F1F2;
 }
 
 /* web/web-item.html */
 
 .index_title {
-    position: absolute;
-    top: 150px;
-    left: 525px;
+    margin-top: 165px;
+    text-align: center;
 }
+
+/* .index_title img {
+    display: inline;
+} */
 
 .web_flex {
     position: relative;
     display: flex;
-    margin-top: 250px;
     height: 300px;
     background-color: #F3F1F2;
     justify-content: center;
+}
+
+.web_flex img {
+    width: 57%;
 }
 
 .web_capture {
@@ -548,8 +605,7 @@ textarea {
     width: 40%;
 }
 
-.item_contents {
-    width: 40%;
+.web-item_contents {
     align-items: flex-start;
 }
 
@@ -558,24 +614,47 @@ textarea {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    padding-block: 10px;
+    padding-block: 20px;
+}
+
+.wlink_btn img {
+    width: 80%;
 }
 
 .web_inner2 {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin: 80px 0;
+    margin: 70px 0;
 }
 
 .web_inner3 {
     width: 60%;
 }
 
-.web_text {
+.web_text,
+.logo_sub-title {
     font-size: 1em;
+    line-height: 1.5em;
 }
 
 .web_list {
     margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+
+.web_list tr {
+    border-top: 1px solid black;
+}
+
+.web_list th {
+    padding: 1em 2em;
+    text-align: left;
+}
+
+.web_list td {
+    padding: 1em 2em;
+    text-align: right;
 }

@@ -36,7 +36,6 @@ a {
 
 img {
   max-width: 100%;
-  display: block;
   object-fit: cover;
   border: none;
 }
@@ -84,7 +83,7 @@ button {
 dl,
 dd,
 dt {
-  display: inline;
+  /* display: inline; */
   font-size: 1.0625rem;
   text-align: left;
   line-height: 1.5;
@@ -98,10 +97,12 @@ dl {
 }
 
 dt {
+  width: 25%;
   border: 1.5px solid #5F4343;
   border-radius: 5%;
   padding: 5px 20px;
   background-color: #F3F1F2;
+  text-align: center;
 }
 
 .base_container {

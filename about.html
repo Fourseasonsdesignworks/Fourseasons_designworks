@@ -17,19 +17,19 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/parts.css" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/parts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 </html>
 
-<body>
+<body class="about-body">
   <header class="header_bar">
     <h1>
-      <a href="../index.html"
+      <a href="./index.html"
         ><img
           class="logo"
-          src="../img/top_about/logo.png"
+          src="./img/top_about/logo.png"
           alt="fourseasons-logo"
       /></a>
     </h1>
@@ -37,15 +37,15 @@
     <a href="https://www.instagram.com/fourseasons_designworks/"
       ><img
         class="insta-logo"
-        src="../img/top_about/Instagram_w.png"
+        src="./img/top_about/Instagram_w.png"
         alt="instagram-logo"
     /></a>
   </header>
 
   <nav class="side_nav base_container">
-    <ul>
+    <ul class="nav_fixed">
       <li><a href="#">ABOUT</a></li>
-      <li><a href="../index.html#skills">SKILLS</a></li>
+      <li><a href="./index.html#skills">SKILLS</a></li>
       <li><a href="./works/index-1.html">WORKS</a></li>
       <li><a href="./contact/index.html">CONTACT</a></li>
     </ul>
@@ -55,7 +55,7 @@
     <section class="about_main base_container">
       <div class="about_left2">
         <div class="title_about">
-          <h2><img src="../img/nav_title/about.png" alt="about" /></h2>
+          <h2><img src="./img/nav_title/about.png" alt="about" /></h2>
           <p>　　わたし、こんなひとです。</p>
         </div>
 
@@ -72,17 +72,17 @@
           <p>
             仕事の傍ら、書道連盟に所属し、展覧会への作品制作や小中学校での書道ボランティア指導を行っています。また、地元・豊田市の「橋の下世界音楽祭」には『塗組』として参加。看板制作や会場設営など、現場でのクリエイティブ活動も大切にしています。
           </p>
-          <table class="about_list">
+          <table>
             <dl>
-              <div>
+              <div class="about_list">
                 <dt>好きなこと</dt>
                 <dd>山登り(山ごはん)、手仕事(料理・裁縫)、アロマ、漫画</dd>
               </div>
-              <div>
+              <div class="about_list">
                 <dt>苦手なもの</dt>
                 <dd>昆虫、合成香料、ぎっくり腰</dd>
               </div>
-              <div>
+              <div class="about_list">
                 <dt>座右の銘</dt>
                 <dd>「人生楽ありゃ苦もあるさ」</dd>
               </div>
@@ -92,15 +92,24 @@
       </div>
       <div class="about_right2">
         <div class="about_pic">
-          <img src="../img/top_about/about2.jpg" alt="mov" />
-          <img src="../img/top_about/about2.jpg" alt="about2" />
-          <img src="../img/top_about/about3.jpg" alt="abput3" />
+          <video controls autoplay muted loop playsinline width="100%">
+            <source src="./img/top_about/kakukaku.MOV" type="video/mp4" />
+          </video>
+          <img
+            class="about_pic2"
+            src="./img/top_about/about2.jpg"
+            alt="about2"
+          />
+          <img src="./img/top_about/about3.jpg" alt="abput3" />
         </div>
       </div>
     </section>
   </main>
 
   <footer>
+    <div class="scrolldown_page">
+      <a href="#"><span>PAGE to TOP</span> </a>
+    </div>
     <p>©Fourseasons designworks 2026</p>
   </footer>
 </body>
