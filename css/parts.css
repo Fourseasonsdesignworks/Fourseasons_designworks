@@ -190,11 +190,11 @@
 
     .title_left p::before {
         content: "";
-        width: 40px;
+        width: 25px;
         height: 1px;
         background-color: #5F4343;
         position: absolute;
-        top: 22px;
+        top: 17px;
         left: 0;
         transform: translateX(0)
     }
@@ -248,11 +248,11 @@
 
     .title_right p::before {
         content: "";
-        width: 40px;
+        width: 25px;
         height: 1px;
         background-color: #5F4343;
         position: absolute;
-        top: 22px;
+        top: 17px;
         left: 0;
         transform: translateX(0)
     }
@@ -311,6 +311,32 @@
     top: 7%;
     left: 75%;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width:1000px) {
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .title_center2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .title_center2 p {
+        writing-mode: horizontal-tb;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .title_center2 p::before {
+        width: 25px;
+        height: 1px;
+        transform: translateX(0)
+    }
 }
 
 /* ボタン */
