@@ -25,8 +25,6 @@ $(".openbtn").click(function () {
 
 const slides = document.querySelector(".slides");
 const items = document.querySelectorAll(".slides li");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dots");
 
 let index = 0;

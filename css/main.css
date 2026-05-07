@@ -38,6 +38,26 @@ header {
     width: 50px;
 }
 
+@media screen and (max-width:1000px) {
+    .insta-logo {
+        display: none;
+    }
+
+    .header_bar {
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        height: 50%;
+    }
+
+    .logo {
+        height: 70%;
+    }
+}
+
+
 /* main */
 .main-visual {
     display: flex;
@@ -47,10 +67,27 @@ header {
     max-width: 100%;
 }
 
+@media screen and (max-width:1000px) {
+    .main-visual {
+        display: none;
+    }
+
+    .slider,
+    .dots {
+        display: block;
+    }
+}
+
 .mv_nav {
     text-align: center;
     max-width: 25%;
+    transition: 0.3s;
 }
+
+.mv_nav:hover {
+    filter: brightness(1.15);
+}
+
 
 .nav_top {
     margin-bottom: 30px;
@@ -116,10 +153,12 @@ header {
     padding-right: 0;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row-reverse;
 }
 
 .about_bg {
     background-color: #F5F9FF;
+    overflow-x: hidden;
 }
 
 
@@ -130,6 +169,7 @@ header {
     padding: 5px 15px;
     background-color: #F3F1F2;
 }
+
 
 .about_things dd {
     padding: 10px;
@@ -163,6 +203,34 @@ header {
     margin-top: 60px;
 }
 
+@media screen and (max-width:1000px) {
+    .about {
+        display: flex;
+        padding: 200px 0;
+        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_things dt {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about_btn {
+        width: 100%;
+    }
+
+    .about_right {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .left_text {
+        padding-top: 0;
+    }
+}
+
 /* skills */
 .skills {
     display: flex;
@@ -184,6 +252,31 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media screen and (max-width:1000px) {
+    .skills {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .skills_right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 89%;
+        margin: 0 auto;
+    }
+
+    .skills_text {
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+
+
 }
 
 /* works */
@@ -208,8 +301,55 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     gap: 25px;
+}
+
+.works_hover {
+    transition: 0.3s;
+
+}
+
+.works_hover:hover {
+    filter: brightness(1.15);
+}
+
+@media screen and (max-width:1000px) {
+    .works {
+        margin: 200px auto;
+        gap: 40px;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .title_left {
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .works {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .works_left p {
+        writing-mode: horizontal-tb;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .works_left p::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #5F4343;
+        position: absolute;
+        top: 22px;
+        left: 0;
+        transform: translateX(0)
+    }
+
 }
 
 /* contact */
@@ -377,7 +517,7 @@ video {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: center;
-    margin: 80px 0;
+    margin: 80px 0 200px 0;
     justify-content: center;
 }
 
@@ -401,7 +541,11 @@ video {
     gap: 40px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 250px;
+    margin-bottom: 40px;
+}
+
+.works_grid {
+    margin-bottom: 200px;
 }
 
 .other_item p {
@@ -568,9 +712,14 @@ textarea {
 
 /* web/index.html */
 .web_item {
-    width: 275px;
-    height: 275px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
     background-color: #F3F1F2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* web/web-item.html */
@@ -660,6 +809,11 @@ textarea {
 .web_list td {
     padding: 1em 2em;
     text-align: right;
+}
+
+
+.works_flex img {
+    width: 100%;
 }
 
 

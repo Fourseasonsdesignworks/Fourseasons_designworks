@@ -185,6 +185,7 @@
     .title_left p {
         writing-mode: horizontal-tb;
         height: auto;
+        font-size: 1rem;
     }
 
     .title_left p::before {
@@ -225,6 +226,38 @@
     left: 20px;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width:1000px) {
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .title_right {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .title_right p {
+        writing-mode: horizontal-tb;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .title_right p::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #5F4343;
+        position: absolute;
+        top: 22px;
+        left: 0;
+        transform: translateX(0)
+    }
+}
+
 
 /* タイトル 中央*/
 .title_center {
@@ -288,6 +321,11 @@
     color: #ffffff;
     background-color: #C66D6B;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn_base:hover {
+    filter: brightness(1.15);
 }
 
 .btn_line {
@@ -345,7 +383,7 @@
 
 /* ページネーション */
 .pagination {
-    margin-bottom: 100px;
+    margin-block: 200px;
     text-align: center;
 }
 
@@ -394,7 +432,7 @@ footer p {
 /* 項目のindexファイルのtop-view */
 .blur {
     animation-name: blurAnime;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -431,6 +469,8 @@ footer p {
         transform: translateY(0);
     }
 }
+
+
 
 /*==================================================
 ハンバーガーメニュー

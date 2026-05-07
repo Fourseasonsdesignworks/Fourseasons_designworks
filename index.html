@@ -39,6 +39,8 @@
           src="./img/top_about/Instagram_w.png"
           alt="instagram-logo"
       /></a>
+
+      <div class="openbtn"><span></span><span></span><span></span></div>
     </header>
 
     <main>
@@ -113,28 +115,17 @@
       </nav>
 
       <!-- sp menu -->
-<section class="slider">
-  <ul class="slides">
-    <li><img src="./img/top_about/spring_pc.jpg" alt="spring"></li>
-    <li><img src="./img/top_about/summer_pc.jpg" alt="summer"></li>
-    <li><img src="./img/top_about/autmun_pc.jpg" alt="autumn"></li>
-    <li><img src="./img/top_about/winter_pc.jpg" alt="winter"></li>
-  </ul>
-  <!-- ドット -->
-  <div class="dots"></div>
-</section>
+      <section class="slider">
+        <picture>
+          <img src="./img/top_about/spring_pc.jpg" alt="spring" />
+          <img src="./img/top_about/summer_pc.jpg" alt="summer" />
+          <img src="./img/top_about/autmun_pc.jpg" alt="autumn" />
+          <img src="./img/top_about/winter_pc.jpg" alt="winter" />
+        </picture>
 
-
-
-      <div class="openbtn"><span></span><span></span><span></span></div>
-
-
-
-
-
-
-
-      <!-- ここまで -->
+        <!-- ドット -->
+        <div class="dots"></div>
+      </section>
 
       <section class="concept">
         <div class="concept_wrapper">
@@ -159,6 +150,17 @@
 
       <div class="about_bg">
         <section class="about base_container" id="about">
+          <div class="about_right">
+            <picture>
+              <!-- sp -->
+              <source
+                srcset="././img/top_about/about-sp.jpg"
+                media="(max-width: 1000px)"
+              />
+              <!-- PC -->
+              <img src="./img/top_about/top3.png" alt="about" />
+            </picture>
+          </div>
           <div class="about_left">
             <div class="title_left">
               <h2><img src="./img/nav_title/about.png" alt="about" /></h2>
@@ -193,16 +195,21 @@
               </a>
             </div>
           </div>
-          <div class="about_right">
-            <img src="./img/top_about/top3.png" alt="about" />
-          </div>
         </section>
       </div>
 
       <section class="skills" id="skills">
         <div class="skills">
           <div class="skills_left">
-            <img src="./img/top_about/top4.png" alt="skills" />
+            <picture>
+              <!-- sp -->
+              <source
+                srcset="././img/top_about/skills-sp.jpg"
+                media="(max-width: 1000px)"
+              />
+              <!-- PC -->
+              <img src="./img/top_about/top4.png" alt="skills" />
+            </picture>
           </div>
           <div class="skills_right">
             <div class="title_right">
@@ -232,13 +239,13 @@
           >
         </div>
         <div class="works_right">
-          <a href="./works/web/index.html"
+          <a class="works_hover" href="./works/web/index.html"
             ><img src="./img/btn/web_btn.jpg" alt="web"
           /></a>
-          <a href="./works/index-1.html"
+          <a class="works_hover" href="./works/index-1.html"
             ><img src="./img/btn/gra_btn.jpg" alt="graphic"
           /></a>
-          <a href="./works/calligraphy/index.html"
+          <a class="works_hover" href="./works/calligraphy/index.html"
             ><img src="./img/btn/calli_btn.jpg" alt="calligraphy"
           /></a>
         </div>
@@ -265,11 +272,25 @@
       <p>©Fourseasons designworks 2026</p>
     </footer>
 
-<!-- js jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- js jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-<script src="./main.js"></script>
-</body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
